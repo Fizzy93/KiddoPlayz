@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddo Playz</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Prompt:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Kiddo Playz</a></div>
+            <ul class="links">
+              <li><a href="afterlogin.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Profile</a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+          
+        <div class="dropdown_menu">
+          <li><a href="afterlogin.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="action_btn">Profile</a></li>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <!--cards -->
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/pngtree-hand-draw-gesture-of-rock-paper-scissors-png-image_2728575.jpg">
+       </div>
+       <div class="title">
+        <h1>
+       Rock Paper Sissors</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="rps.html"><button>Play</button></a>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/48653480-94494080-e9d3-11e8-8464-d8f32e5ba81a.png">
+       </div>
+       <div class="title">
+        <h1>
+       Memory Card Game</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="memory.html"><button>Play</button></a>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/511LlE+0JRL.jpg">
+       </div>
+       <div class="title">
+        <h1>
+       Hang Man Game</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="hangman.html"><button>Play</button></a>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/unnamed.png">
+       </div>
+       <div class="title">
+        <h1>
+       Word Scramble Game</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <button>Play</button>
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/typing-speed-test.webp">
+       </div>
+       <div class="title">
+        <h1>
+       Typing Speed Test</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="tps.html"><button>Play</button></a>
+       </div>
+       </div>
+       <!--cards -->
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/1865460.png">
+       </div>
+       <div class="title">
+        <h1>
+       Tic Tac Toe </h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <button>Play</button>
+       </div>
+       </div>
+       <!--cards -->
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/71q-0BzuFuL.png">
+       </div>
+       <div class="title">
+        <h1>
+       Snake Apple Game</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="snake.html"><button>Play</button></a>
+       
+       </div>
+       </div>
+       <!--cards -->
+       
+       
+       <div class="card">
+       
+       <div class="image">
+          <img src="img/Flappy_Bird_icon.png">
+       </div>
+       <div class="title">
+        <h1>
+       Flappy Flappy Bird</h1>
+       </div>
+       <div class="des">
+        <p>have fun!</p>
+       <a href="flappybird.html"><button>Play</button></a>
+       </div>
+       </div>
+       <!--cards -->
+       
+       </div>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script> 
+
+</body>
+</html>
+
